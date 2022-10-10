@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="Firefox"/>
+  <test thread-count="2" parallel="tests" name="chromeTest(failed)">
+    <classes>
+      <class name="testPack.verifyuser">
+        <methods>
+          <include name="test123"/>
+          <include name="launchBrowser"/>
+          <include name="CleanPomObjects"/>
+          <include name="ClosedBrowser"/>
+          <include name="beforemethod"/>
+          <include name="ClickOnBack"/>
+          <include name="createPomClassObject"/>
+        </methods>
+      </class> <!-- testPack.verifyuser -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
